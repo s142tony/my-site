@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>插畫作品集 — Illustration Folio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Shippori+Mincho+B1:wght@400;600;800&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="preloader.js"></script>
+<div id="cur-dot"></div>
+<div id="cur-ring"></div>
+
+<nav class="progress-bar" id="progress-bar"></nav>
+
+<header class="hero">
+  <div class="hero-side-text">Illustration Portfolio — Personal Works</div>
+
+  <div class="hero-header">
+    <h1 class="hero-title">
+      Illustration <span>Folio</span>
+    </h1>
+    
+    <!-- 右側選單與 Instagram 連結區塊 -->
+    <div class="hero-header-right">
+      <span class="hero-nav-label">Portfolio · 2024–2026</span>
+      
+      <!-- Instagram 連結 -->
+      <a href="https://instagram.com/instagram" target="_blank" rel="noopener noreferrer" class="hero-social-link" data-hover>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+        <span>Instagram</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-slides-container">
+    <div class="hero-slide active">
+      <div class="hero-media-left" data-hover>
+        <video class="hero-video" autoplay loop muted playsinline poster="pre_image/名偵探光之美少女-森亜るるか2160X3840.jpg">
+          <source data-src="image/名偵探光之美少女-森亜るるか1920x1080.mp4" type="video/mp4">
+        </video>
+        
+        <button class="mute-toggle-btn mute-btn" aria-label="Toggle Audio">
+          <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+        
+        <div class="hero-deco-num"></div>
+      </div>
+
+      <div class="hero-media-right" data-hover>
+        <img src="pre_image/名偵探光之美少女-森亜るるか2160X3840.jpg" data-full-src="image/名偵探光之美少女-森亜るるか2160X3840.jpg" alt="名偵探光之美少女">
+        <div class="hero-deco-num"></div>
+        
+        <div class="artwork-meta hero-meta">
+          <span class="artwork-sub">Star Detective Precure!</span>
+          <div class="artwork-divider"></div>
+          <h3 class="artwork-title">名偵探光之美少女<br>森亜るるか</h3>
+          <span class="artwork-tag">Fan Art</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主打作品 Slide 2 -->
+    <div class="hero-slide">
+      <div class="hero-media-left" data-hover>
+        <video class="hero-video" autoplay loop muted playsinline poster="pre_image/hero2.jpg">
+          <source data-src="image/hero2.mp4" type="video/mp4">
+        </video>
+        
+        <button class="mute-toggle-btn mute-btn" aria-label="Toggle Audio">
+          <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+        
+        <div class="hero-deco-num"></div>
+      </div>
+
+      <div class="hero-media-right" data-hover>
+        <img src="pre_image/hero2.jpg" data-full-src="image/hero2.jpg" alt="主打作品二">
+        <div class="hero-deco-num"></div>
+        
+        <div class="artwork-meta hero-meta">
+          <span class="artwork-sub">作品類別 / 系列名稱</span>
+          <div class="artwork-divider"></div>
+          <h3 class="artwork-title">主打作品名稱二<br>副標題 / 角色名</h3>
+          <span class="artwork-tag">標籤</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 主打作品 Slide 3 -->
+    <div class="hero-slide">
+      <div class="hero-media-left" data-hover>
+        <video class="hero-video" autoplay loop muted playsinline poster="pre_image/hero3.jpg">
+          <source data-src="image/hero3.mp4" type="video/mp4">
+        </video>
+        
+        <button class="mute-toggle-btn mute-btn" aria-label="Toggle Audio">
+          <svg class="icon-muted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <line x1="23" y1="9" x2="17" y2="15"></line>
+            <line x1="17" y1="9" x2="23" y2="15"></line>
+          </svg>
+          <svg class="icon-unmuted" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+          </svg>
+        </button>
+        
+        <div class="hero-deco-num"></div>
+      </div>
+
+      <div class="hero-media-right" data-hover>
+        <img src="pre_image/hero3.jpg" data-full-src="image/hero3.jpg" alt="主打作品三">
+        <div class="hero-deco-num"></div>
+        
+        <div class="artwork-meta hero-meta">
+          <span class="artwork-sub">作品類別 / 系列名稱</span>
+          <div class="artwork-divider"></div>
+          <h3 class="artwork-title">主打作品名稱三<br>副標題 / 角色名</h3>
+          <span class="artwork-tag">標籤</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="hero-nav-btn hero-nav-btn-left" aria-label="Previous Slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+  </button>
+  <button class="hero-nav-btn hero-nav-btn-right" aria-label="Next Slide">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+  </button>
+</header>
+
+<main class="gallery-section">
+
+  <div class="gallery-header">
+    <div>
+      <h2 class="gallery-heading">
+        <em>Works</em>
+        作品集
+      </h2>
+    </div>
+    <span class="gallery-count mono" id="work-count">— / —</span>
+  </div>
+
+  <div class="gallery-items" id="gallery">
+
+    <!-- 作品 01 -->
+    <div class="artwork-row">
+      <div class="artwork-index mono"></div>
+      <div class="artwork-img-wrap" data-hover>
+        <img src="pre_image\牌卡系列_胖吉.JPG" data-full-src="image\牌卡系列_胖吉.JPG" alt="作品名稱 01" loading="lazy">
+      </div>
+      <div class="artwork-meta">
+        <span class="artwork-sub">304班 / 牌卡系列</span>
+        <div class="artwork-divider"></div>
+        <h3 class="artwork-title">簡同學<br>吉來</h3>
+        <span class="artwork-tag">牌卡</span>
+      </div>
+    </div>
+
+    <!-- 作品 02 -->
+    <div class="artwork-row">
+      <div class="artwork-index mono"></div>
+      <div class="artwork-img-wrap" data-hover>
+        <img src="pre_image/thumb2.jpg" data-full-src="image/image2.jpg" alt="作品名稱 02" loading="lazy">
+      </div>
+      <div class="artwork-meta">
+        <span class="artwork-sub">作品類別 / 系列名稱</span>
+        <div class="artwork-divider"></div>
+        <h3 class="artwork-title">作品名稱 02<br>副標題</h3>
+        <span class="artwork-tag">標籤</span>
+      </div>
+    </div>
+
+    <!-- 作品 03 -->
+    <div class="artwork-row">
+      <div class="artwork-index mono"></div>
+      <div class="artwork-img-wrap" data-hover>
+        <img src="pre_image/thumb3.jpg" data-full-src="image/image3.jpg" alt="作品名稱 03" loading="lazy">
+      </div>
+      <div class="artwork-meta">
+        <span class="artwork-sub">作品類別 / 系列名稱</span>
+        <div class="artwork-divider"></div>
+        <h3 class="artwork-title">作品名稱 03<br>副標題</h3>
+        <span class="artwork-tag">標籤</span>
+      </div>
+    </div>
+
+    <!-- 作品 04 -->
+    <div class="artwork-row">
+      <div class="artwork-index mono"></div>
+      <div class="artwork-img-wrap" data-hover>
+        <img src="pre_image/thumb4.jpg" data-full-src="image/image4.jpg" alt="作品名稱 04" loading="lazy">
+      </div>
+      <div class="artwork-meta">
+        <span class="artwork-sub">作品類別 / 系列名稱</span>
+        <div class="artwork-divider"></div>
+        <h3 class="artwork-title">作品名稱 04<br>副標題</h3>
+        <span class="artwork-tag">標籤</span>
+      </div>
+    </div>
+
+    <!-- 作品 05 -->
+    <div class="artwork-row">
+      <div class="artwork-index mono"></div>
+      <div class="artwork-img-wrap" data-hover>
+        <img src="pre_image/thumb5.jpg" data-full-src="image/image5.jpg" alt="作品名稱 05" loading="lazy">
+      </div>
+      <div class="artwork-meta">
+        <span class="artwork-sub">作品類別 / 系列名稱</span>
+        <div class="artwork-divider"></div>
+        <h3 class="artwork-title">作品名稱 05<br>副標題</h3>
+        <span class="artwork-tag">標籤</span>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <span class="footer-brand">Illustration Folio</span>
+  
+  <!-- 頁尾 Instagram 連結 -->
+  <a href="https://instagram.com/your_username" target="_blank" rel="noopener noreferrer" class="footer-social-link" data-hover>
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+    </svg>
+    <span>@your_username</span>
+  </a>
+
+  <span class="footer-copy mono">© 2026 · All Rights Reserved</span>
+</footer>
+
+<script>
+// ============================
+// Sequenced Loading Pipeline (Thumbs -> Videos -> High-Res)
+// ============================
+document.addEventListener('DOMContentLoaded', () => {
+  const allImages = document.querySelectorAll('img[data-full-src]');
+  const allVideos = document.querySelectorAll('video.hero-video');
+
+  let loadedThumbs = 0;
+  const totalThumbs = allImages.length;
+
+  const loadHighResImages = () => {
+    allImages.forEach(img => {
+      const fullSrc = img.getAttribute('data-full-src');
+      if (!fullSrc) return;
+      const fullImg = new Image();
+      fullImg.onload = () => {
+        img.src = fullSrc;
+      };
+      fullImg.src = fullSrc;
+    });
+  };
+
+  const loadVideos = () => {
+    let videosToLoad = allVideos.length;
+    if (videosToLoad === 0) {
+      loadHighResImages();
+      return;
+    }
+
+    allVideos.forEach(video => {
+      const source = video.querySelector('source');
+      if (source && source.getAttribute('data-src')) {
+        source.src = source.getAttribute('data-src');
+        video.load();
+
+        video.addEventListener('loadeddata', () => {
+          videosToLoad--;
+          if (videosToLoad === 0) {
+            loadHighResImages();
+          }
+        }, { once: true });
+
+        video.addEventListener('error', () => {
+          videosToLoad--;
+          if (videosToLoad === 0) loadHighResImages();
+        }, { once: true });
+      } else {
+        videosToLoad--;
+        if (videosToLoad === 0) loadHighResImages();
+      }
+    });
+  };
+
+  const checkThumbs = () => {
+    loadedThumbs++;
+    if (loadedThumbs === totalThumbs) {
+      loadVideos();
+    }
+  };
+
+  if (totalThumbs === 0) {
+    loadVideos();
+    return;
+  }
+
+  allImages.forEach(img => {
+    if (img.complete) {
+      checkThumbs();
+    } else {
+      img.addEventListener('load', checkThumbs, { once: true });
+      img.addEventListener('error', checkThumbs, { once: true });
+    }
+  });
+});
+</script>
+
+<script src="script.js"></script>
+<script src="lightbox.js"></script>
+</body>
+</html>
